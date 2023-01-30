@@ -1,5 +1,5 @@
 {
-  "name": "licenseplate",
+  "name": "mendix-licenseplate",
   "widgetName": "LicensePlate",
   "version": "1.0.0",
   "description": "Render license plate",
