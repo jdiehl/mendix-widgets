@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.licenseplate.LicensePlate" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>License Plate</name>
+    <description>Render license plate</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="license" type="expression" required="true">
+                <caption>License</caption>
+                <description />
+                <returnType type="String" />
+            </property>
+            <property key="country" type="expression" required="true">
+                <caption>Country Code</caption>
+                <description />
+                <returnType type="String" />
+            </property>
+            <property key="height" type="integer" defaultValue="150">
+                <caption>Height</caption>
+                <description>The height (px) of the license plate</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
