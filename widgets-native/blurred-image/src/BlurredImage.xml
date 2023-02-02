@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.blurredimage.BlurredImage" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Blurred Image</name>
+    <description>Present an image with a blur effect</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="image" type="image" required="true">
+                <caption>Image</caption>
+                <description>Image to be displayed as blurred</description>
+            </property>
+            <property key="width" type="integer" defaultValue="200">
+                <caption>Width</caption>
+                <description>Image width</description>
+            </property>
+            <property key="height" type="integer" defaultValue="200">
+                <caption>Height</caption>
+                <description>Image height</description>
+            </property>
+            <property key="blurRadius" type="integer" defaultValue="10">
+                <caption>Blur Radius</caption>
+                <description>Defines the strength of the blur</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

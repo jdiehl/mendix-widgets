@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.listviewatbottom.ListViewAtBottom" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>List View At Bottom</name>
+    <description>ListView that scrolls to the bottom</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="data" type="datasource" required="true" isList="true">
+                <caption>Data Source</caption>
+                <description></description>
+            </property>
+            <property key="widgets" type="widgets" required="true" dataSource="data">
+                <caption>Widgets</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

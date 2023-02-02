@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.customrating.CustomRating" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Custom Rating</name>
+    <description>Custom rating widget</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="rateAttribute" type="attribute">
+                <caption>Attribute</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                    <attributeType name="Long"/>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+            <property key="type" type="enumeration" defaultValue="Happiness">
+                <caption>My enumeration</caption>
+                <description>My enumeration setting</description>
+                <enumerationValues>
+                    <enumerationValue key="Happiness">Happiness</enumerationValue>
+                    <enumerationValue key="StateOfMind">State of Mind</enumerationValue>
+                </enumerationValues>
+            </property>        
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On change</caption>
+                <description/>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.multiselect.MultiSelect" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Multi Select</name>
+    <description>React Select Multi-Select Widget for Mendix</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Data source">
+                <property key="attribute" type="attribute" required="true">
+                    <caption>Attribute</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="String" />
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Options">
+                <property key="options" type="datasource" isList="true" required="true">
+                    <caption>Options</caption>
+                    <description />
+                </property>
+                <property key="optionsValue" type="expression" dataSource="options" required="true">
+                    <caption>Value</caption>
+                    <description />
+                    <returnType type="String" />
+                </property>
+                <property key="optionsLabel" type="expression" dataSource="options" required="true">
+                    <caption>Label</caption>
+                    <description />
+                    <returnType type="String" />
+                </property>
+                <property key="multi" type="boolean" defaultValue="false">
+                    <caption>Multiselect</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.timelinechart.TimelineChart" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Timeline Chart</name>
+    <description>Timeline Chart</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Chart">
+            <propertyGroup caption="Data source">
+                <property key="data" type="datasource" isList="true" required="true">
+                    <caption>Series Data</caption>
+                    <description />
+                </property>
+                <property key="dataTime" type="attribute" required="true" dataSource="data">
+                    <caption>Time Attribute</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="DateTime"/>
+                    </attributeTypes>
+                </property>
+                <property key="dataValue" type="attribute" required="true" dataSource="data">
+                    <caption>Value Attribute</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Integer"/>
+                        <attributeType name="Long"/>
+                        <attributeType name="Decimal"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Appearance">
+                <property key="color" type="expression" defaultValue="'#000000'" required="true">
+                    <caption>Color</caption>
+                    <description></description>
+                    <returnType type="String" />
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>

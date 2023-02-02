@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.mapbox.Mapbox" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Mapbox</name>
+    <description>Mapbox Map</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Mapbox">
+                <property key="accessToken" type="string" required="true">
+                    <caption>Mapbox Access Token</caption>
+                    <description>Get it here: https://account.mapbox.com</description>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Datasource">
+                <property key="incidences" type="datasource" isList="true" required="false">
+                    <caption>List of CountyIncidences</caption>
+                    <description />
+                </property>
+                <property key="rsAttr" type="attribute" required="false" dataSource="incidences">
+                    <caption>RS Attribute</caption>
+                    <description>The Attribute for the RS County Identifier</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+                <property key="levelAttr" type="attribute" required="false" dataSource="incidences">
+                    <caption>Level</caption>
+                    <description>The Attribute for the "Notbremse" Level</description>
+                    <attributeTypes>
+                        <attributeType name="Integer"/>
+                        <attributeType name="Long"/>
+                        <attributeType name="Decimal"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Visual">
+            <property key="width" type="string" defaultValue="100%" required="false">
+                <caption>Width</caption>
+                <description>Default: 100%</description>
+            </property>
+            <property key="height" type="string" defaultValue="80vh" required="false">
+                <caption>Height</caption>
+                <description>Default: 80vh</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

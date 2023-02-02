@@ -1,0 +1,36 @@
+{
+  "name": "blurred-image",
+  "widgetName": "BlurredImage",
+  "version": "1.0.0",
+  "description": "A blurred image",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Jonathan Diehl",
+  "engines": {
+    "node": ">=12"
+  },
+  "config": {
+    "projectPath": "./tests/TestProject/"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Jonathan Diehl/blurredimage/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0",
+    "@types/big.js": "^6.0.2",
+    "@types/react": "~17.0.1",
+    "@types/react-native": "~0.63.52"
+  },
+  "dependencies": {
+
+  }
+}

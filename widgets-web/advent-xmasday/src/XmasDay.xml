@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.xmasday.XmasDay" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Xmas Day</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="imageUrl" type="expression" required="true">
+                <caption>Image URL</caption>
+                <description>Use one of the shipped patterns (/patterns/p*.jpg) or add your own</description>
+                <returnType type="String" />
+            </property>
+            <property key="canOpen" type="expression" required="true">
+                <caption>Can Open?</caption>
+                <description>Can the user access this day's content?</description>
+                <returnType type="Boolean" />
+            </property>
+            <property key="content" type="widgets" required="true">
+                <caption>Content</caption>
+                <description>The content shown after opening the day</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

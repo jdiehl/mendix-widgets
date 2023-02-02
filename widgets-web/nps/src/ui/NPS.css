@@ -1,0 +1,45 @@
+/*
+Place your custom CSS here
+*/
+.nps-rating {
+  display: flex;
+  height: 40px;
+  align-items: stretch;
+}
+
+.nps-rating div {
+  flex-grow: 1;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  border-left: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.nps-rating div.active {
+  color: #fff;
+  background-color: #24276c;
+}
+
+.nps-rating div:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nps-rating div:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid #aaa;
+}
+
+.nps-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 1px 8px;
+}

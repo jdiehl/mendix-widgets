@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.pageevents.PageEvents" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Page Events</name>
+    <description>React to page events in a native app</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Events">
+            <property key="onWillFocus" type="action">
+                <caption>onWillFocus</caption>
+                <description />
+            </property>
+            <property key="onDidFocus" type="action">
+                <caption>onDidFocus</caption>
+                <description />
+            </property>
+            <property key="onWillBlur" type="action">
+                <caption>onWillBlur</caption>
+                <description />
+            </property>
+            <property key="onDidBlur" type="action">
+                <caption>onDidBlur</caption>
+                <description />
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

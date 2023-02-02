@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.piechart.PieChart" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Pie Chart</name>
+    <description>Simple Pie Chart</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="mxData" type="datasource" isList="true" required="true">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="mxTitle" type="expression" dataSource="mxData">
+                <caption>Title</caption>
+                <description />
+                <returnType type="String" />
+            </property>
+            <property key="mxValue" type="expression" dataSource="mxData">
+                <caption>Value</caption>
+                <description />
+                <returnType type="Decimal" />
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

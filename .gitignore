@@ -33,6 +33,24 @@ yarn-error.log*
 .turbo
 
 # pluggable-widgets
-dist/
-./test-app/
+.idea
+.vscode
+.env
+
 *.log
+*.bak
+*.launch
+
+dist
+
+mxproject
+mendixProject
+testProject
+coverage
+
+./packages/**/results
+./packages/**/e2e/diffs
+./packages/**/screenshot
+./packages/**/screenshot-results
+./packages/**/tests/testProject
+./packages/**/artifacts

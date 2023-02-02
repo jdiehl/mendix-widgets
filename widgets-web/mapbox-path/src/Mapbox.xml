@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.mapbox.Mapbox" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Mapbox</name>
+    <description>Mapbox Map</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Mapbox">
+                <property key="mapboxToken" type="expression" required="true">
+                    <caption>Mapbox Access Token</caption>
+                    <description>Get it here: https://account.mapbox.com</description>
+                    <returnType type="String" />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Single Path">
+                <property key="pointList" type="datasource" isList="true" required="false">
+                    <caption>List of Points</caption>
+                    <description />
+                </property>
+                <property key="latitudeAttr" type="attribute" required="true" dataSource="pointList">
+                    <caption>Latitude</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal"/>
+                    </attributeTypes>
+                </property>
+                <property key="longitudeAttr" type="attribute" required="true" dataSource="pointList">
+                    <caption>Longitude</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Multiple Paths">
+                <property key="pathList" type="datasource" isList="true" required="false">
+                    <caption>List of Points</caption>
+                    <description />
+                </property>
+                <property key="pathAttr" type="attribute" required="true" dataSource="pathList">
+                    <caption>Latitude</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Visual">
+            <property key="width" type="string" defaultValue="100%" required="false">
+                <caption>Width</caption>
+                <description>Default: 100%</description>
+            </property>
+            <property key="height" type="string" defaultValue="80vh" required="false">
+                <caption>Height</caption>
+                <description>Default: 80vh</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
