@@ -1,5 +1,5 @@
 ## AppState
-Respond to [AppState](https://reactnative.dev/docs/appstate) Events"
+Respond to [AppState events](https://reactnative.dev/docs/appstate)
 
 * `onActive`: triggered when the application becomes active
 * `onBackground`: triggered when the application switches to the background
