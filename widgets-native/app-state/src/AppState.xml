@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.appstate.AppState" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>App State</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Events">
+            <property key="onActive" type="action">
+                <caption>onActive</caption>
+                <description>Triggered when the application becomes active.</description>
+            </property>
+            <property key="onBackground" type="action">
+                <caption>onBackground</caption>
+                <description>Triggered when the application switches to the background.</description>
+            </property>
+            <property key="onInactive" type="action">
+                <caption>onInactive</caption>
+                <description>Triggered when the application becomes inactive (iOS only)</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
