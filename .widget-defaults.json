@@ -1,0 +1,14 @@
+{
+  "description": "Mendix widget",
+  "organization": "Mendix",
+  "copyright": "© Mendix Technology BV 2023. All rights reserved.",
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "author": "Jonathan Diehl",
+  "projectPath": "/Volumes/[C] Windows 11/Users/Jonathan.Diehl/Documents/Mendix/Playground-main",
+  "programmingLanguage": "typescript",
+  "programmingStyle": "function",
+  "boilerplate": "empty",
+  "hasUnitTests": false,
+  "hasE2eTests": false
+}
