@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+    <clientModule name="DataTable" version="1.0.0" xmlns="http://www.mendix.com/clientModule/1.0/">
+        <widgetFiles>
+            <widgetFile path="DataTable.xml"/>
+        </widgetFiles>
+        <files>
+            <file path="mendix/datatable"/>
+        </files>
+    </clientModule>
+</package>
