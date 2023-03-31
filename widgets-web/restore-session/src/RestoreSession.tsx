@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export function RestoreSession(): null {
     useEffect(() => {
-        if (/lssid=/.test(document.cookie)) {
+        if (/lscheck=1/.test(document.cookie)) {
             document.location = '/ls/'
         }
     }, []);
